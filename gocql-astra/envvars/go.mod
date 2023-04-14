@@ -1,4 +1,4 @@
-module gocql-astra
+module gocql
 
 go 1.20
 
