@@ -1,6 +1,8 @@
 version: 2
 updates:
   - package-ecosystem: gomod
-    directory: /
+    directory: "/"
     schedule:
-      interval: daily
+      interval: "weekly"
+    # Disable version updates for hex dependencies
+    open-pull-requests-limit: 0
