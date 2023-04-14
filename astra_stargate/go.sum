@@ -1,0 +1,4 @@
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
+github.com/synedra/astra_stargate v0.0.0-20230413203949-fe482074c683 h1:Abf7HVcwOXmJ2Xs+4jkWzQTV/5Hcd6vie2x11SOY8wc=
+github.com/synedra/astra_stargate v0.0.0-20230413203949-fe482074c683/go.mod h1:hmCo5Y6FnRdBPTiLlun8yxKw2UXJ9PZcuESQcXovKWE=
