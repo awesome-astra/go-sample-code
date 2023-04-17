@@ -142,7 +142,7 @@ func main() {
 
 	// REST: Delete the table
 	fmt.Println("Delete the table")
-	responsebody, err = client.APIDelete("/api/rest/v2/keyspaces/library/users/Janesha/Doesha")
+	responsebody, err = client.APIDelete("/api/rest/v2/keyspaces/library/users")
 	if err != nil {
 		fmt.Println(err)
 	}
