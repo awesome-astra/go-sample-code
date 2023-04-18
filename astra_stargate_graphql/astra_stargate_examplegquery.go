@@ -2,7 +2,7 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
+	// "encoding/json"
 	"fmt"
 	"os"
 
@@ -10,10 +10,6 @@ import (
 
 	"github.com/joho/godotenv"
 )
-
-type QueryRequestBody struct {
-	Query string `json:"query"`
-}
 
 func main() {
 	err := godotenv.Load()
@@ -27,21 +23,14 @@ func main() {
 		fmt.Println(err)
 	}
 
-	var query = QueryRequestBody{
-		Query: `query GetTables {
-			keyspace(name: "library") {
-				name
-			}
-		  }
-	`,
-	}
-
-	jsonStr, err := json.Marshal(query)
+	query := "{\"query\":\"query GetTables {keyspace(name: \\\"library\\\") {name}}\"}"
+	queryBody := []byte(query)
+	bodyReader := bytes.NewBuffer(queryBody)
 
 	if err != nil {
 		panic(err)
 	}
-	req, err := client.APIPost("/graphql-schema", bytes.NewBuffer(jsonStr))
+	req, err := client.APIPost("/api/graphql-schema", bodyReader)
 	fmt.Println(req)
 	fmt.Println(err)
 
