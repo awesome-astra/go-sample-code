@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/synedra/astra_stargate"
+	"github.com/awesome-astra/astra_stargate_go"
 
 	"github.com/joho/godotenv"
 )
@@ -18,7 +18,7 @@ func main() {
 		return
 	}
 
-	client := astra_stargate.NewBasicAuthClient(os.Getenv("ASTRA_DB_APPLICATION_TOKEN"), os.Getenv("ASTRA_DB_ID"), os.Getenv("ASTRA_DB_REGION"))
+	client := astra_stargate_go.NewBasicAuthClient(os.Getenv("ASTRA_DB_APPLICATION_TOKEN"), os.Getenv("ASTRA_DB_ID"), os.Getenv("ASTRA_DB_REGION"))
 	if err != nil {
 		fmt.Println(err)
 	}
