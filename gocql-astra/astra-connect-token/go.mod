@@ -1,16 +1,16 @@
-module gocql-astra-example
+module gocql
 
 go 1.20
 
 require (
-	github.com/datastax/gocql-astra v0.0.0-20230519175251-eb676ab27549
-	github.com/gocql/gocql v1.4.0
+	github.com/datastax/gocql-astra v0.0.0-20230413190528-278eb983a36f
+	github.com/gocql/gocql v1.3.2
 	github.com/joho/godotenv v1.5.1
 )
 
 require (
 	github.com/datastax/astra-client-go/v2 v2.2.9 // indirect
-	github.com/datastax/cql-proxy v0.1.4 // indirect
+	github.com/datastax/cql-proxy v0.1.3 // indirect
 	github.com/datastax/go-cassandra-native-protocol v0.0.0-20211124104234-f6aea54fa801 // indirect
 	github.com/deepmap/oapi-codegen v1.9.0 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
